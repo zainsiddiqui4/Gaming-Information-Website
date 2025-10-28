@@ -1,6 +1,6 @@
-# 🎮 Gaming Information Website
+# Gaming Information Website
 
-## 📘 Project Overview
+## Project Overview
 This project is a **Gaming Information Website** designed using **HTML, CSS, and JavaScript**.  
 It provides details about popular and upcoming games, game genres, and the latest gaming news.  
 The website is responsive and user-friendly, giving visitors an engaging browsing experience.
@@ -9,7 +9,7 @@ This project is developed as part of the **ICT (Introduction to Communication an
 
 ---
 
-## 👥 Group Members
+## Group Members
 | Name | Roll No |
 |------|----------|
 | Zain Ul Abideen | 25F-0611 |
@@ -18,14 +18,14 @@ This project is developed as part of the **ICT (Introduction to Communication an
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **HTML5** – For website structure  
 - **CSS3** – For styling and layout  
 - **JavaScript (JS)** – For interactivity and dynamic content  
 
 ---
 
-## 🌐 Features
+## Features
 - Homepage with featured games  
 - Game details and description pages  
 - Simple and clean navigation bar  
