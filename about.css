@@ -1,0 +1,100 @@
+/* COLOR PALETTE */
+:root {
+  --yellow: #ffbf38;
+  --dark-blue: #011627;
+  --box-bg: #06263c;
+  --white: #ffffff;
+}
+
+/* GENERAL STYLING */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--dark-blue);
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: #021d33;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--yellow);
+}
+
+.logo {
+  color: var(--yellow);
+  font-size: 26px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 25px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav .active,
+nav a:hover {
+  color: var(--yellow);
+}
+
+/* HERO */
+.about-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h2 {
+  font-size: 36px;
+  color: var(--yellow);
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #b8b8c8;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ABOUT CONTENT BOXES */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  padding: 50px;
+}
+
+.about-box {
+  background: var(--box-bg);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+/* Heading inside boxes */
+.about-box h3 {
+  color: var(--yellow);
+  font-size: 22px;
+}
+
+/* Hover animation */
+.about-box:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--yellow);
+}
+
+.about-box:hover h3 {
+  color: black;
+}
+
+.about-box ul {
+  padding-left: 20px;
+}
