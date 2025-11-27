@@ -1,0 +1,128 @@
+:root {
+  --yellow: #ffbf38;
+  --dark-blue: #011627;
+  --accent-green: #3da49d;
+  --white: #ffffff;
+}
+
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--dark-blue);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: #021d33;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--accent-green);
+}
+
+header .logo {
+  color: var(--yellow);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav .active,
+nav a:hover {
+  color: var(--yellow);
+}
+
+/* SECTION TITLE */
+.games-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.games-section .section-title {
+  color: var(--yellow);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GAMES CONTAINER */
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+/* GAME BOX */
+.game-box {
+  position: relative;
+  height: 220px;
+  background: #06263c;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.game-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+/* GAME NAME TEXT AT TOP-LEFT */
+.game-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.55); /* black shadow behind text */
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.game-box:hover {
+  transform: scale(1.15);
+  background: var(--white);
+  box-shadow: 0 0 20px var(--yellow);
+}
+
+.game-box:hover img {
+  opacity: 0.2;
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.game-box:hover .play-btn {
+  display: block;
+}
